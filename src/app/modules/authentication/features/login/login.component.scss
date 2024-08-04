@@ -1,0 +1,65 @@
+@import "../../../../../../public/assets/styles/variables";
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+
+  .login {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 .5rem 1rem rgba(black, .15);
+    border-radius: 10px;
+
+    figure {
+      margin: 0px;
+    }
+
+    .login_form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 16px;
+      padding-right: 64px;
+      background: $whiteColor;
+
+      form {
+        width: 100%;
+
+        .form-group {
+          padding-bottom: 24px;
+        }
+      }
+
+      .welcome_title {
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 29px;
+        color: $textColor;
+      }
+
+      .welcome_message {
+        color: $grayedTextColor;
+        font-size: 15px;
+
+        .spaces {
+          color: $primaryColor;
+        }
+      }
+
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          margin-bottom: 0px !important;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}

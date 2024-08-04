@@ -1,0 +1,56 @@
+@import '../public/assets/styles/variables';
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+
+$theme-colors: (
+  "primary": $primaryColor,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/bootstrap';
+
+
+* {
+  // outline: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "SF NS Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $baseColor !important;
+}
+
+.primary_text {
+  color: $primaryColor
+}
+
+.primary_button {
+  background-color: $primaryColor;
+  color: $whiteColor !important;
+  border-radius: 20px;
+  border: $primaryColor;
+  padding: 8px 24px;
+  text-transform: uppercase;
+}
+
+.container {
+  margin-right: 135px !important;
+  margin-left: 135px !important;
+  max-width: calc(100% - 270px) !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
